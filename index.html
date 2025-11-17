@@ -1,25 +1,146 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Servicio de Mantenimiento de Motoreductores</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MotionIQ – Mantenimiento de Motoreductores</title>
+
+  <!-- Tipografía tipo PDF (Montserrat) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <style>
-    body { font-family: Arial; padding: 40px; background: #f5f5f5; }
-    .card { background: white; padding: 30px; border-radius: 12px; max-width: 600px; margin: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-    h1 { margin-bottom: 10px; }
-    p { line-height: 1.6; }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #0c0c0c;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 40px;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+
+    h1 {
+      font-weight: 700;
+      letter-spacing: 1px;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 60px;
+      font-weight: 600;
+      letter-spacing: .5px;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 17px;
+      opacity: 0.85;
+    }
+
+    .section {
+      padding: 60px 20px;
+    }
+
+    .clientes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      max-width: 900px;
+      margin: 40px auto;
+      text-align: center;
+    }
+
+    .cliente-box {
+      background: #111;
+      padding: 30px;
+      border-radius: 12px;
+      border: 1px solid #1e1e1e;
+      transition: 0.3s;
+    }
+
+    .cliente-box:hover {
+      transform: translateY(-5px);
+      border-color: #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      border-top: 1px solid #222;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+    .contacto a {
+      color: #4ea0ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contacto a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
+
 <body>
-  <div class="card">
-    <h1>Servicio de Mantenimiento de Motoreductores</h1>
-    <p>Realizo mantenimiento preventivo y correctivo de motoreductores industriales: diagnóstico, lubricación, alineación, ajuste, cambio de piezas y optimización de rendimiento.</p>
-    <p><strong>Contacto</strong><br>
-      📍 Bogotá, Colombia<br>
-      📞 319 237 9824<br>
-      📧 juancano10c@gmail.com
+
+  <header>
+    <h1>MOTION IQ</h1>
+    <p>Soluciones Industriales – Mantenimiento Profesional de Motoreductores</p>
+  </header>
+
+  <!-- Sección descripción -->
+  <section class="section">
+    <h2>¿Quiénes Somos?</h2>
+    <p>
+      Somos especialistas en mantenimiento preventivo y correctivo de motoreductores industriales.
+      Nuestro enfoque es aumentar la eficiencia, reducir fallas mecánicas y asegurar la continuidad operativa
+      de tu planta con técnicas basadas en ingeniería y mejores prácticas.
     </p>
-  </div>
+  </section>
+
+  <!-- Servicios -->
+  <section class="section">
+    <h2>Servicios</h2>
+    <p>Mantenimiento preventivo, correctivo, diagnóstico, lubricación técnica, alineación, ajuste, inspecciones y optimización.</p>
+  </section>
+
+  <!-- Nuestros Clientes -->
+  <section class="section">
+    <h2>Nuestros Clientes</h2>
+
+    <div class="clientes-grid">
+      <div class="cliente-box">Aceiteras / Plantas Extractoras</div>
+      <div class="cliente-box">Industria de Alimentos</div>
+      <div class="cliente-box">Empresas de Manufactura</div>
+      <div class="cliente-box">Sector Automotriz</div>
+      <div class="cliente-box">Sector Metalúrgico</div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="section contacto">
+    <h2>Contacto</h2>
+    <p>
+      📍 Bogotá, Colombia <br>
+      📞 319 237 9824 <br>
+      ✉️ <a href="mailto:juancano10c@gmail.com">juancano10c@gmail.com</a>
+    </p>
+  </section>
+
+  <footer>
+    MotionIQ © 2025 – Ingeniería y Mantenimiento Industrial
+  </footer>
+
 </body>
 </html>
+
